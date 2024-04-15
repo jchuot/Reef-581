@@ -26,11 +26,13 @@ a {
 .header-main .header-main-logo {
 	width: fit-content;
 	height: 100%;
-	background-color: yellow;
 }
 
-.header-main-logo img {
-	height: 30px;
+.header-main .header-main-logo-img {
+	width: fit-content;
+	line-height: 60px;
+	height: 100%;
+	padding-left: 30px;
 }
 
 .header-main .header-main-nav {
@@ -101,6 +103,13 @@ a {
 	line-height: 60px;
 	height: 100%;
 	padding-left: 60px;
+}
+
+.footer-main .footer-main-logo-img {
+	width: fit-content;
+	line-height: 60px;
+	height: 100%;
+	padding-left: 30px;
 }
 
 .footer-main .footer-main-nav {
