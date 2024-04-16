@@ -1,0 +1,8 @@
+/* SHOULD ONLY CONTAIN STYLING THAT APPLIES TO index.html */
+
+main {
+	width: 100%;
+	height: calc(100vh - 60px);
+	background-color: var(--light-orange);
+	margin-top: 60px;
+}

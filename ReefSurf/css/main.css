@@ -1,8 +1,19 @@
-body {
-	background-color: #7FDBF0;
+/* SHOULD ONLY CONTAIN STYLING THAT APPLIES TO ALL PAGES */
+
+:root {
+	--dark-blue: #235A7F;
+	--med-blue: #328EB7;
+	--light-blue: #7FDBF0;
+	--pale-blue: #ADDBF0;
+	--dark-orange: #FC5000;
+	--light-orange: #FC6D60;
 }
 
-body:after {
+body {
+	background-color: var(--pale-blue);
+}
+
+body:after { /* NEEDED? FOR LOADING HOVER IMAGES? */
 	position: absolute;
 	width: 0;
 	height: 0;
@@ -16,58 +27,43 @@ a {
 }
 
 .header-main {
+	position: fixed;
+	top: 0;
 	width: 100%;
 	height: 60px;
-	background-color: #235A7F;
+	background-color: var(--dark-blue);
 	display: flex;
 	justify-content: space-between;
+	z-index: 1000;
 }
 
 .header-main .header-main-logo {
 	width: fit-content;
 	height: 100%;
+	padding-left: 40px;
 }
 
 .header-main .header-main-logo-img {
 	width: fit-content;
 	line-height: 60px;
 	height: 100%;
-	padding-left: 30px;
 }
 
 .header-main .header-main-nav {
 	width: 120px;
 	height: 100%;
 	background-color: blue;
+	color: white;
 }
 
-.header-main .header-main-sm {
+.header-main .header-main-login {
 	width: 120px;
 	height: 100%;
 	background-color: red;
+	color: white;
 }
 
-.title {
-	font-family: "Montserrat", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 800;
-	font-style: italic;
-	text-align: left;
-	color: white ;
-	text-transform: lowercase;
-	background-color: #235A7F;
-	margin-top: 100px;
-}
-
-.main-p {
-	color: blue;
-}
-
-.img {
-	width: 500px;
-	margin-left: 100px;
-}
-
+/*		PICTURE THAT CHANGES WHEN HOVER
 .pic {
 	width: 300px;
 	height: 500px;
@@ -81,11 +77,13 @@ a {
 .pic:hover {
 	background-image: url(../img/eevee_linus.jpeg);
 }
+*/
 
+/*		FOOTER
 .footer-main {
 	width: 100%;
 	height: 60px;
-	background-color: #235A7F;
+	background-color: var(--dark-blue);
 	display: flex;
 	justify-content: space-between;
 }
@@ -102,14 +100,13 @@ a {
 	width: fit-content;
 	line-height: 60px;
 	height: 100%;
-	padding-left: 60px;
+	padding-left: 40px;
 }
 
 .footer-main .footer-main-logo-img {
 	width: fit-content;
 	line-height: 60px;
 	height: 100%;
-	padding-left: 30px;
 }
 
 .footer-main .footer-main-nav {
@@ -137,7 +134,7 @@ a {
 }
 
 .footer-main-nav ul li a:hover {
-	color: #FC6D60;
+	color: var(--dark-orange);
 }
 
 .footer-main .footer-main-sm {
@@ -173,3 +170,4 @@ a {
 .footer-main-sm-in:hover {
 	background-image: url(../img/instagram-color.png);
 }
+*/
