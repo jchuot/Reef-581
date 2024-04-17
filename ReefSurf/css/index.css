@@ -1,8 +1,70 @@
 /* SHOULD ONLY CONTAIN STYLING THAT APPLIES TO index.html */
 
+.sidebar {
+	width: 200px;
+	background-color: var(--light-blue);
+	position: fixed;
+	height: calc(100vh - 60px);
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	border-right: 2px solid var(--light-orange);
+	padding-top: 10px;
+}
+
+.sidebar a {
+	display: block;
+	color: green;
+	padding-left: 40px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	text-align: left;
+	color: white ;
+	text-transform: lowercase;
+	font-size: 15px;
+}
+
+.sidebar a:hover {
+	background-color: var(--light-orange);
+	border-radius: 25px;
+	color: yellow;
+}
+
 main {
 	width: 100%;
 	height: calc(100vh - 60px);
-	background-color: var(--light-orange);
+	background-color: var(--pale-blue);
 	margin-top: 60px;
+	margin-left: 200px;
+}
+
+
+/* RESPONSIVE DESIGN FOR SIDE BAR INCOMPLETE */
+@media screen and (max-width: 700px) {
+	.sidebar {
+		margin-top: 60px;
+		width: 100vh;
+		height: auto;
+		position: relative;
+		flex-direction: row;
+
+		border-bottom: 2px solid var(--light-orange);
+	}
+	.sidebar a {
+		float: left;
+		text-align: center;
+	}
+	div.content {
+		margin-left:0;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.sidebar {
+		
+		
+	}
 }
