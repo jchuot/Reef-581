@@ -1,0 +1,59 @@
+/* SHOULD ONLY CONTAIN STYLING THAT APPLIES TO header.html */
+
+.header-main {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	background-color: var(--dark-blue);
+	display: flex;
+	justify-content: space-between;
+	z-index: 1000;
+
+	border-bottom: 2px solid var(--light-orange);
+}
+
+.header-main .header-main-logo {
+	width: fit-content;
+	height: 100%;
+	padding-left: 30px;
+}
+
+.header-main .header-main-logo-img {
+	width: fit-content;
+	line-height: 60px;
+	height: 100%;
+}
+
+.header-main .header-main-nav input[type=text] {
+	padding: 6px;
+	border: none;
+	margin-top: 11px;
+	margin-right: 16px;
+	font-size: 17px;
+	color: black;
+	background-color: white;
+	border-radius: 25px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	width: 500px;
+	text-align: center;
+}
+
+.header-main .header-main-login {
+	width: 120px;
+	height: 100%;
+}
+
+.header-main .header-main-login .login-button {
+	margin-top: 10px;
+    background-color: var(--med-blue);
+	color: white;
+	padding: 10px 25px;
+	text-align: center;
+	display: inline-block;
+	font-size: 15px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	border-radius: 25px;
+}
