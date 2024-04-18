@@ -3,7 +3,7 @@ this is the official readme file for Reef(CSC-581 Project)
 
 ## Notes
 
-### Justine 4/16
+### Justine
 - 4/16
 	- login.html is referenced when clicking the "Login" button in the corner
 - 4/17
@@ -15,3 +15,6 @@ this is the official readme file for Reef(CSC-581 Project)
 		- not fully funtional
 			- can display but the hrefs are not working
 		- for now, may have to copy & paste header
+	- added temporary community groups in the main index.html
+	- added dropdown options in the side bar
+		- responsive..?

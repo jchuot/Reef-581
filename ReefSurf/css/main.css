@@ -21,7 +21,7 @@ body:after { /* NEEDED? FOR LOADING HOVER IMAGES? */
 	height: 0;
 	overflow: hidden;
 	z-index: -1;
-	content: url(../img/eevee_linus.jpeg) url(../img/facebook-color.png) url(../img/instagram-color.png);
+	content: url(../img/eevee_linus.jpeg) url(../img/facebook-color.png) url(../img/instagram-color.png) url(../img/down-arrow-white.png);
 }
 
 a {

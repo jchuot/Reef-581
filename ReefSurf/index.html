@@ -32,9 +32,31 @@
 		
 		<div class="sidebar">
 			<a href="index.html">Home</a>
-			<a href="#">Label1</a>
-			<a href="#">Label2</a>
-			<a href="#">Label3</a>
+			<a href="#">Label</a>
+			<a href="#">Label</a>
+			<a href="#">Label</a>
+			<div class=dropdown>
+				<div class="down1">
+					<button class="dropdown-btn">Dropdown
+						<img class="down-arrow-icon" src="img/down-arrow-color.png" alt="down arrow icon">
+					</button>
+					<div class="dropdown-container">
+						<a href="#">LinkD</a>
+						<a href="#">LinkD</a>
+						<a href="#">LinkD</a>
+					</div>
+				</div>
+				<div class="down2">
+					<button class="dropdown-btn">Dropdown
+						<img class="down-arrow-icon" src="img/down-arrow-color.png" alt="down arrow icon">
+					</button>
+					<div class="dropdown-container">
+						<a href="#">LinkD</a>
+						<a href="#">LinkD</a>
+						<a href="#">LinkD</a>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<script>
@@ -46,6 +68,21 @@
 			  	else {
 			    	x.className = "head-main";
 			  	}
+			}
+
+			var dropdown = document.getElementsByClassName("dropdown-btn");
+			var i;
+
+			for (i = 0; i < dropdown.length; i++) {
+			  dropdown[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var dropdownContent = this.nextElementSibling;
+			    if (dropdownContent.style.display === "block") {
+			      dropdownContent.style.display = "none";
+			    } else {
+			      dropdownContent.style.display = "block";
+			    }
+			  });
 			}
 		</script>
 
