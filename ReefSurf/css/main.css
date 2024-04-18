@@ -111,9 +111,41 @@ a {
 }
 
 .content {
-	margin-top: 60px;
-	width: 100%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	right: 0;
+	width: calc(100% - 200px);
 	height: calc(100% - 60px);
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.content .comm-list {
+	justify-content: space-between;
+}
+
+.content .comm {
+	float: left;
+	background-color: var(--med-blue);
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 15px;
+	padding-top: 60px;
+	padding-left: 40px;
+	width: 250px;
+	height: 250px;
+	border-radius: 25px;
+	border: 2px solid var(--med-blue);
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	font-size: 20px;
+	color: var(--white-orange);
+}
+
+.content .comm:hover {
+	box-shadow: 1px 1px 2px black, 0 0 25px var(--light-orange), 0 0 5px var(--dark-orange);
 }
 
 /* RESPONSIVE HEADER BAR INCOMPLETE */
@@ -167,12 +199,12 @@ a {
 
 	.header-main-nav input[type=text] {
 		border: none;
-		font-size: 15px;
-		color: black;
 		background-color: white;
 		border-radius: 25px;
 		font-family: "Montserrat", sans-serif;
 		font-weight: 500;
+		font-size: 15px;
+		color: black;
 		width: 250px;
 		text-align: center;
 		padding-top: 5px;
@@ -222,6 +254,16 @@ a {
 		background-color: var(--dark-blue);
 		height: 93%;
 	}
+
+	.content {
+		left: 0;
+		width: 100%;
+	}
+
+	.content .comm-list {
+		padding-left: 15px;
+	}
+}
 
 /*
 	.menu-bars-icon {
@@ -279,7 +321,6 @@ a {
 	    border: 1px solid #red;
 	}
 	*/
-}
 
 /*		PICTURE THAT CHANGES WHEN HOVER
 .pic {
