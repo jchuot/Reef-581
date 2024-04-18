@@ -18,3 +18,5 @@ this is the official readme file for Reef(CSC-581 Project)
 	- added temporary community groups in the main index.html
 	- added dropdown options in the side bar
 		- responsive..?
+- 4/18
+	- added temporary communities

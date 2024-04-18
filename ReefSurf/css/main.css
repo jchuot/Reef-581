@@ -122,32 +122,6 @@ a {
 	padding-right: 30px;
 }
 
-.content .comm-list {
-	justify-content: space-between;
-}
-
-.content .comm {
-	float: left;
-	background-color: var(--med-blue);
-	margin-top: 20px;
-	margin-right: 20px;
-	margin-left: 15px;
-	padding-top: 60px;
-	padding-left: 40px;
-	width: 250px;
-	height: 250px;
-	border-radius: 25px;
-	border: 2px solid var(--med-blue);
-	font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 20px;
-	color: var(--white-orange);
-}
-
-.content .comm:hover {
-	box-shadow: 1px 1px 2px black, 0 0 25px var(--light-orange), 0 0 5px var(--dark-orange);
-}
-
 /* RESPONSIVE HEADER BAR INCOMPLETE */
 @media screen and (max-width: 700px) {
 	.menu-bars-icon {
