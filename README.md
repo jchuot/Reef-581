@@ -20,3 +20,8 @@ this is the official readme file for Reef(CSC-581 Project)
 		- responsive..?
 - 4/18
 	- added temporary communities
+
+- 5/8
+	- added the item page
+	- updated side bar
+	- buttons don't link to anything yet b/c do not have all the pages

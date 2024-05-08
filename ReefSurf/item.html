@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ReefSurf</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/item.css">
+	</head>
+
+	<body>
+		<header class="header-main" id="myheader">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    			<img class="menu-bars-icon" src="img/menu-bar.png" alt="menu bar icon">
+    		</a>
+			<ul class="header-main-list">
+				<li class="header-main-logo">
+					<a class="header-main-logo" href="index.html"><img class="header-main-logo-img" src="img/new-logo-white.png" alt="new logo"></a>
+				</li>
+				<li class="header-main-nav">
+					<input type="text" placeholder="Search...">
+				</li>
+				<li class="header-main-login">
+					<a href="login.html" class="login-button">Login</a>
+				</li>
+    		</ul>
+		</header>
+		
+		<div class="sidebar">
+			<a href="index.html">Home</a>
+			<a href="#">Explore</a>
+			<a href="#">Profile</a>
+			<div class=dropdown>
+				<div class="down1">
+					<button class="dropdown-btn">Groups
+						<img class="down-arrow-icon" src="img/down-arrow-color.png" alt="down arrow icon">
+					</button>
+					<div class="dropdown-container">
+						<a href="#">Books</a>
+						<a href="#">Crafting</a>
+						<a href="#">Fashion</a>
+						<a href="#">Home Decor</a>
+						<a href="#">Keyboards</a>
+						<a href="#">Pets</a>
+						<a href="#">Plants</a>
+						<a href="#">Toys</a>
+						<a href="#">Video Games</a>
+					</div>
+				</div>
+				<div class="down2">
+					<button class="dropdown-btn">Help
+						<img class="down-arrow-icon" src="img/down-arrow-color.png" alt="down arrow icon">
+					</button>
+					<div class="dropdown-container">
+						<a href="#">FAQs</a>
+						<a href="#">Help</a>
+						<a href="#">Contact Us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function myFunction() {
+			 	var x = document.getElementById("myheader");
+			 	if (x.className === "head-main") {
+			   		x.className += " responsive";
+			 	} 
+			  	else {
+			    	x.className = "head-main";
+			  	}
+			}
+
+			var dropdown = document.getElementsByClassName("dropdown-btn");
+			var i;
+
+			for (i = 0; i < dropdown.length; i++) {
+			  dropdown[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var dropdownContent = this.nextElementSibling;
+			    if (dropdownContent.style.display === "block") {
+			      dropdownContent.style.display = "none";
+			    } else {
+			      dropdownContent.style.display = "block";
+			    }
+			  });
+			}
+		</script>
+
+		<main class="content">
+			<div class="item-name">
+				WagWellies Mojave XXXL Neon Green
+			</div>
+			<div class="item-block">
+				<div class="item-sections">
+					<div class="image-section">
+
+						<div class="slideshow-container">
+							<div class="prev-button">
+								<a class="prev" onclick="plusSlides(-1)">❮</a>
+							</div>
+							<div class="img_slides">
+								<div class="mySlides fade">
+								  <div class="numbertext">1 / 3</div>
+								  <img class="slide_img" src="img/dog_shoes.jpg">
+								</div>
+							</div>
+							<div class="img_slides">
+								<div class="mySlides fade">
+								  <div class="numbertext">2 / 3</div>
+								  <img class="slide_img" src="img/dog_shoes_2.jpg">
+								</div>
+							</div>
+							<div class="img_slides">
+								<div class="mySlides fade">
+								  <div class="numbertext">1 / 3</div>
+								  <img class="slide_img" src="img/dog_shoes_4.jpeg">
+								</div>
+							</div>
+							<div class="next-button">
+								<a class="next" onclick="plusSlides(1)">❯</a>
+							</div>
+							</div>
+						</div>
+
+					<div class="description-section">
+						<div class="info-sections">
+							<div class="description-label">
+								DESCRIPTION
+							</div>
+							<div class="written-section">
+								<p>
+								Elevate your furry friend's outdoor experience with these pre-loved dog shoes! Crafted for durability and comfort, these paw protectors have traversed various terrains and are ready to accompany your canine companion on new adventures.
+								</p>
+								<br>
+								<p>
+								Features:
+								<br>
+								<b>Weather-Resistant Construction</b>: Engineered to endure diverse weather conditions, these dog shoes offer reliable protection against hot pavement, icy sidewalks, rocky terrain, and muddy trails.
+								<br>
+								<b>Secure Fit</b>: Adjustable straps ensure a snug and secure fit, preventing the shoes from slipping off during playtime or walks.
+								<br>
+								<b>Durable Soles</b>: The sturdy soles provide traction and stability, helping your pup navigate rough surfaces with confidence.
+								</p>
+								<br>
+								<p>
+								Whether your pooch is a seasoned adventurer or just starting to explore the great outdoors, these used dog shoes are a budget-friendly option for safeguarding their paws and ensuring their comfort on all your outdoor escapades. Give your furry friend the gift of protection without breaking the bank!
+								</p>
+							</div>
+							<div class="price-section">
+								$ 20.00&emsp;&emsp;USD
+							</div>
+							<div class="buy-button">
+								<a href="#checkout-page" class="buy-button">BUY NOW</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-block">
+				<div class="bottom-label">
+					COMMENTS
+				</div>
+				<div class="bottom-sections">
+					<div class="comment-section">
+						<div class="comment-box">
+							<div class="user-icon">
+								<img class="user-img" src="img/user-icon.png" alt="user-icon-image">
+							</div>
+							<div class="comment-input">
+								<input type="text" class="comment" id="comment" name="comment">
+							</div>
+						</div>
+						<div class="existing-comments">
+							<div class="convo-1">
+								<div class="convo-1-question">
+									<div class="user-icon">
+										<img class="user-img" src="img/user-icon.png" alt="user-icon-image">
+									</div>
+									<div class="question-1">
+										Are these shoes easy to clean?
+									</div>
+								</div>
+								<div class="convo-1-answer">
+									<div class="user-icon">
+										<img class="user-img" src="img/user-icon.png" alt="user-icon-image">
+									</div>
+									<div class="answer-1">
+										Yes, these dog shoes are relatively easy to clean. Simply wipe them down with a damp cloth or rinse them under running water to remove dirt and debris. Just let them air dry afterward, and they'll be ready for your next adventure!
+									</div>
+								</div>
+							</div>
+							<div class="convo-2">
+								<div class="convo-2-question">
+									<div class="user-icon">
+										<img class="user-img" src="img/user-icon.png" alt="user-icon-image">
+									</div>
+									<div class="question-2">
+										Do these shoes provide good traction on slippery surfaces?
+									</div>
+								</div>
+								<div class="convo-2-answer">
+									<div class="user-icon">
+										<img class="user-img" src="img/user-icon.png" alt="user-icon-image">
+									</div>
+									<div class="answer-2">
+										Absolutely! The sturdy soles of these dog shoes provide excellent traction, allowing your furry friend to navigate slippery surfaces with ease. Whether it's icy sidewalks or wet pavement, these shoes will help prevent slips and falls, keeping your dog safe and secure.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="more-item-section">
+						<div class="more-item-label">
+							RELATED ITEMS
+						</div>
+						<div class="more-item">
+							<img class="more-item-img" src="img/dog_puzzle.jpg">
+							Nina Ottosson<br>dog puzzle
+						</div>
+						<div class="more-item">
+							<img class="more-item-img" src="img/dog_leg_brace.jpg">
+							Dog No-Knuckling<br>front support brace
+						</div>
+						<div class="more-item" id="more-item-last">
+							<img class="more-item-img" src="img/dog_leash_harness.jpg">
+							WildOnes walk set<br>Lilac
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+			<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			    slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			    dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+			</script>
+
+	</body>
+</html>
