@@ -91,6 +91,7 @@ a {
 .header-main .header-main-login {
 	width: 120px;
 	height: 100%;
+	visibility: hidden;
 }
 
 .header-main .header-main-login .login-button {

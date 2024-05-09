@@ -1,0 +1,163 @@
+/* SHOULD ONLY CONTAIN STYLING THAT APPLIES TO checkout_review.html */
+
+main {
+	width: 100vw;
+	height: calc(100vh - 60px);
+	background-color: var(--white-blue);
+	margin-top: 60px;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+}
+
+.content {
+	padding-right: auto;
+	padding-left: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.content .info-input-sections {
+	margin-right: 20px;
+	height: 100%;
+	width: 60%;
+}
+
+.content .info-input-sections .info-sections {
+	margin-top: 5px;
+	margin-bottom: 5px; 
+	margin-right: 5px; 
+	margin-left: 5px;
+}
+
+.content .info-input-sections .info-sections .info-label {
+	background-color: ghostwhite;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+	margin-right: 10px; 
+	margin-left: 10px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	border: 1px solid var(--dark-blue);
+}
+
+.content .info-input-sections .info-sections .info-input {
+	background-color: ghostwhite;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+	margin-right: 10px; 
+	margin-left: 10px;
+	margin-bottom: 20px;
+	padding-left: 25px;
+
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border: 1px solid var(--dark-blue);
+}
+
+.content .info-input-sections .info-sections .info-input .entry-box input[type=text] {
+	padding: 6px;
+	border: none;
+	margin-top: 11px;
+	margin-right: 16px;
+	font-size: 17px;
+	color: black;
+	background-color: white;
+	border-radius: 25px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	width: 95%;
+	text-align: left;
+	border: 1px solid var(--med-blue);
+}
+
+#item-input {
+	height: 200px;
+}
+
+.content .info-input-sections .info-sections .info-input .item-img {
+	background-color: yellow;
+	width: 50%;
+}
+
+.content .info-input-sections .info-sections .info-input .item-img .checkout-img {
+	width: 50%;
+	border-radius: 25px;
+	float: left;
+}
+
+.content .info-input-sections .info-sections .info-input .item-price {
+	float: right;
+	padding-right: 100px;
+}
+
+.content .order-summary-section {
+	margin-left: 20px;
+	height: 100%;
+	width: 36%;
+}
+
+.content .order-summary-section .order-sections {
+	margin-top: 5px;
+	margin-bottom: 5px; 
+	margin-right: 5px; 
+	margin-left: 5px;
+}
+
+.content .order-summary-section .order-sections .summary-label {
+	background-color: ghostwhite;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+	margin-right: 10px; 
+	margin-left: 10px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	border: 1px solid var(--dark-blue);
+}
+
+.content .order-summary-section .order-sections .summary-input {
+	background-color: ghostwhite;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+	margin-right: 10px; 
+	margin-left: 10px;
+	margin-bottom: 20px;
+	padding-left: 25px;
+
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border: 1px solid var(--dark-blue);
+}
+
+.content .order-summary-section .place-order-button {
+	width: 100%;
+  background-color: var(--med-blue);
+	color: white;
+	padding: 5px 25px;
+	text-align: center;
+	display: inline-block;
+	font-size: 15px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	border-radius: 25px;
+}
+
+/* RESPONSIVE DESIGN FOR SIDE BAR INCOMPLETE */
+@media screen and (max-width: 700px) {
+
+	div.content {
+		margin-left:0;
+	}
+}

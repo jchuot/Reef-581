@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ReefSurf</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/checkout_info.css">
+	</head>
+
+	<body>
+		<header class="header-main" id="myheader">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    			<img class="menu-bars-icon" src="img/menu-bar.png" alt="menu bar icon">
+    		</a>
+			<ul class="header-main-list">
+				<li class="header-main-logo">
+					<a class="header-main-logo" href="index.html"><img class="header-main-logo-img" src="img/new-logo-white.png" alt="new logo"></a>
+				</li>
+				<li class="header-main-nav">
+					<input type="text" placeholder="Search...">
+				</li>
+				<li class="header-main-login">
+					<a href="login.html" class="login-button">Login</a>
+				</li>
+    		</ul>
+		</header>
+
+		<main class="content"> 
+			<div class="info-input-sections">
+				<div class="info-sections" id="customer-info">
+					<div class="info-label" id="customer-label">
+						Customer Info
+					</div>
+					<div class="info-input" id="customer-input">
+						<div style="font-weight: 700;">
+							Email
+						</div>
+						placeholder@toromail.csudh.edu
+						<br><br>
+						<div style="font-weight: 700;">
+							Shipping Address
+						</div>
+						FirstName LastName<br>
+						1000 E Victoria St.<br>
+						Carson, CA 90747<br>
+						USA
+					</div>
+				</div>
+				<div class="info-sections" id="payment-info">
+					<div class="info-label" id="payment-label">
+						Payment Info
+					</div>
+					<div class="info-input" id="payment-input">
+						<div style="font-weight: 700;">
+							Payment Info
+						</div>
+						PayPal
+						<br><br>
+						<div style="font-weight: 700;">
+							Billing Address
+						</div>
+						FirstName LastName<br>
+						1000 E Victoria St.<br>
+						Carson, CA 90747<br>
+						USA
+					</div>
+				</div>
+				<div class="info-sections" id="item-info">
+					<div class="info-label" id="item-label">
+						Item in Order
+					</div>
+					<div class="info-input" id="item-input">
+						<div class="item-img">
+							<img class="checkout-img" src="img/dog_shoes.jpg">
+						</div>
+						<div class="item-price">
+							<br>
+							WagWellies Mojave XXXL Neon Green
+							<br><br>
+							$ 20.00&emsp;&emsp;USD
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="order-summary-section">
+				<div class="order-sections">
+					<div class="summary-sections">
+						<div class="summary-label">
+							Order Summary
+						</div>
+						<div class="summary-input">
+							Total&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$ 20.00&emsp;&emsp;USD
+						</div>
+					</div>
+				</div>
+				<div class="place-order-button">
+					<a href="order_confirmation.html" class="place-order-button">Place Order</a>
+				</div>
+			</div>
+		</main>
+
+	</body>
+</html>
