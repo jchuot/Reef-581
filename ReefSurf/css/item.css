@@ -141,6 +141,7 @@ main {
 
 .content .item-block .item-sections .description-section .info-sections .written-section {
 	height: 400px;
+	height: auto;
 	padding-left: 50px;
 	padding-right: 50px;
 	font-size: 15px;
