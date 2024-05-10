@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ReefSurf</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/community.css">
+	</head>
+
+	<body>
+		<header class="header-main" id="myheader">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    			<img class="menu-bars-icon" src="img/menu-bar.png" alt="menu bar icon">
+    		</a>
+			<ul class="header-main-list">
+				<li class="header-main-logo">
+					<a class="header-main-logo" href="index.html"><img class="header-main-logo-img" src="img/new-logo-white.png" alt="new logo"></a>
+				</li>
+				<li class="header-main-nav">
+					<input type="text" placeholder="Search...">
+				</li>
+				<li class="header-main-login">
+					<a href="login.html" class="login-button">Login</a>
+				</li>
+    		</ul>
+		</header>
+		
+		<div class="sidebar">
+			<a href="index.html">Home</a>
+			<a href="#">Label</a>
+			<a href="#">Label</a>
+			<a href="#">Label</a>
+			<div class=dropdown>
+				<div class="down1">
+					<button class="dropdown-btn">Dropdown
+						<img class="down-arrow-icon" src="img/down-arrow-color.png" alt="down arrow icon">
+					</button>
+					<div class="dropdown-container">
+						<a href="#">LinkD</a>
+						<a href="#">LinkD</a>
+						<a href="#">LinkD</a>
+					</div>
+				</div>
+				<div class="down2">
+					<button class="dropdown-btn">Dropdown
+						<img class="down-arrow-icon" src="img/down-arrow-color.png" alt="down arrow icon">
+					</button>
+					<div class="dropdown-container">
+						<a href="#">LinkD</a>
+						<a href="#">LinkD</a>
+						<a href="#">LinkD</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function myFunction() {
+			 	var x = document.getElementById("myheader");
+			 	if (x.className === "head-main") {
+			   		x.className += " responsive";
+			 	} 
+			  	else {
+			    	x.className = "head-main";
+			  	}
+			}
+
+			var dropdown = document.getElementsByClassName("dropdown-btn");
+			var i;
+
+			for (i = 0; i < dropdown.length; i++) {
+			  dropdown[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var dropdownContent = this.nextElementSibling;
+			    if (dropdownContent.style.display === "block") {
+			      dropdownContent.style.display = "none";
+			    } else {
+			      dropdownContent.style.display = "block";
+			    }
+			  });
+			}
+		</script>
+
+		<main class="content">
+			<ul class="comm-list">
+				<li class="comm" id="comm1">
+					    <div class="picture" id ="pic1"> Green Rubber  
+						<img src = "img/dog_shoes_2.jpg" alt = "Dog Shoes" width="400" height="250"> </div>
+					    <div class="comments" id ="comments1"> Comments/Reviews
+							<br>
+							<p> User Name: <b>Furry Friends</b> </p>
+							 <p> Fun shoes to style the pups!</p>
+							<br>
+							<p> User Name: DogWorld</p>
+							 <p> Love to use these on my pup for muddy walks! </p>
+							<br>
+						<p> User Name: WoofWoof</p>
+							 <p> Such a great gift for your loved ones pets!</p>
+							
+						  </div>
+				</li>
+				<li class="comm" id="comm2">
+					<div class="picture" id ="pic1"> Fun Red&Black  
+					<img src = "img/dog_collar_1.jpg" alt = "Dog Collar" width="400" height="250"> </div>
+					<div class="comments" id ="comments2"> Comments/Reviews
+						<p> User Name: Furry Friends </p>
+						<p> Fun collars for your Furry Friends!</p>
+
+						<br>
+                        <p> User Name: DogWorld</p>
+						<p> Love to use these on my pup for muddy walks! </p>
+
+						<br>
+						<p> User Name: WoofWoof</p>
+						<p> Such a great gift for your loved ones pets!</p>
+					
+				</li>
+				<li class="comm" id="comm3">
+					<div class="picture" id ="pic1"> Ocean Blue 
+					<img src = "img/dog_leash_1.jpg" alt = "Dog Leash" width="400" height="250"> </div>
+					<div class="comments" id ="comments3"> Comments/Reviews
+						<p> User Name: <b>Furry Friends</b> </p>
+						<p> Fun leashes for your Furry Friends!</p>
+						<br>
+						<p> User Name: DogWorld</p>
+						<p> Love to use these on my pup for muddy walks! </p>
+						<br>
+						<p> User Name: WoofWoof</p>
+						<p> Such a great gift for your loved ones pets!</p>
+				</li>
+			</ul>
+		</main>
+
+		<!--	TO CREATE LINKS (target="_blank" opens the link in a new tab)
+		<section>
+			<a href="profile.html">Profile link!</a>
+			<a target="_blank" href="https://www.google.com/search?q=reefsurf&oq=reefsurf&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIQCAEQABiDARixAxjJAxiABDINCAIQABiDARixAxiABDIKCAMQABixAxiABDINCAQQABiDARixAxiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDE1MDhqMGo0qAIAsAIB&sourceid=chrome&ie=UTF-8">Google link!</a>
+		</section>
+		-->
+
+		<!--	TO HAVE A PICTURE THAT CHANGES WHEN HOVER
+		<div class="pic"></div>
+		-->
+
+		<!--	FOOTER
+		<footer class="footer-main">
+			<div class="footer-main-logo">
+				<img class="footer-main-logo-img" src="img/new-logo-white.png" alt="logo">
+			</div>
+			<div class="footer-main-nav">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="#">GALLERY</a></li>
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="footer-main-sm">
+				<a href="https://www.facebook.com"><div class="footer-main-sm-fb"></div></a>
+				<a href="https://www.instagram.com"><div class="footer-main-sm-in"></div></a>
+			</div>
+		</footer>
+		-->
+	</body>
+</html>

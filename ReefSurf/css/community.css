@@ -1,0 +1,166 @@
+/* SHOULD ONLY CONTAIN STYLING THAT APPLIES TO index.html */
+
+.sidebar {
+	width: 200px;
+	background-color: var(--pale-blue);
+	position: fixed;
+	height: calc(100vh - 60px);
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	border-right: 2px solid var(--light-orange);
+	top: 60px;
+	padding-top: 10px;
+}
+
+.sidebar a, .dropdown-btn {
+	display: block;
+	color: green;
+	padding-left: 40px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	text-align: left;
+	color: var(--dark-orange) ;
+	text-transform: lowercase;
+	font-size: 15px;
+}
+
+.sidebar .down-arrow-icon {
+  float: right;
+  padding-right: 10px;
+  width: 25px;
+  margin-top: 3px;
+  margin-right: 50px;
+}
+
+.sidebar a:hover, .dropdown-btn:hover {
+	background-color: var(--med-blue);
+	border-radius: 25px;
+	color: var(--white-orange);
+}
+
+.dropdown-container {
+  display: none;
+  background-color: var(--pale-blue);
+  padding-left: 15px;
+}
+
+main {
+	width: calc(100% - 200px);
+	height: calc(100vh - 60px);
+	background-color: var(--white-blue);
+	margin-top: 60px;
+	left: 200px;
+	right: 0;
+}
+
+.content .comm-list {
+	justify-content: space-between;
+}
+
+.content .comm {
+	float: left;
+	background-color: var(--med-blue);
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 15px;
+	padding-top: 60px;
+	padding-left: 40px;
+	width: 900px;
+	height: 500px;
+	border-radius: 25px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	font-size: 50px;
+	color: var(--white-orange);
+}
+
+.picture {
+    
+    float: left;
+    width: 400px;
+    height: 350px;
+    background-color: lightblue;
+    border: 2px solid black;
+    font-weight: 500;
+    
+}
+.comments {
+
+    float: right;
+    width: 340px;
+    height: 350px;
+    background-color: lightblue;
+    border: 2px solid rgb(238, 13, 13);
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	font-size: 15px;
+	color: var(--dark-orange);
+    line-height: 20px;
+
+    
+
+}
+
+    
+
+/* RESPONSIVE DESIGN FOR SIDE BAR INCOMPLETE */
+@media screen and (max-width: 700px) {
+	.sidebar {
+		width: 100%;
+		height: auto;
+		position: relative;
+		flex-direction: row;
+		border-right: none;
+		border-top: 2px solid var(--light-orange);
+		border-bottom: 2px solid var(--light-orange);
+		justify-content: space-between;
+		text-align: center;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
+		z-index: 100;
+		top: auto;
+		flex-wrap: wrap;
+	}
+
+	.sidebar a {
+		float: center;
+		text-align: center;
+		margin-right: 0px;
+		margin-left: 0px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.sidebar a:hover {
+	}
+
+	div.content {
+		margin-left:0;
+	}
+
+	.dropdown {
+		display: flex;
+	}
+
+	.dropdown-btn .down-arrow-icon {
+		height: 12px;
+	}
+
+	.dropdown-btn {
+		display: flex;
+	}
+
+	.sidebar a, .dropdown-btn {
+		font-size: 13px;
+	}
+
+	.dropdown-container {
+		position: unset;
+	}
+}
