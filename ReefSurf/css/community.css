@@ -66,8 +66,8 @@ main {
 	background-color: var(--med-blue);
 	margin-top: 20px;
 	margin-right: 20px;
-	margin-left: 15px;
-	padding-top: 60px;
+	margin-left: 100px;
+	padding-top: 0px;
 	padding-left: 40px;
 	width: 900px;
 	height: 500px;
@@ -83,30 +83,107 @@ main {
     float: left;
     width: 400px;
     height: 350px;
-    background-color: lightblue;
-    border: 2px solid black;
     font-weight: 500;
-    
+    border-radius: 25px;
 }
+
+#picture-label {
+	font-weight: 600;
+	font-size: 30px;
+	padding-top: 40px;
+	font-weight: 700;
+}
+
+#picture-img {
+	margin-top: 25px;
+	border-radius: 25px;
+}
+
 .comments {
 
     float: right;
-    width: 340px;
-    height: 350px;
-    background-color: lightblue;
-    border: 2px solid rgb(238, 13, 13);
+    width: 450px;
+    height: 100%;
+    background-color: var(--pale-blue);
+    border-left: 2px solid var(--light-orange);
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
-	font-weight: 800;
-	font-size: 15px;
-	color: var(--dark-orange);
+		font-weight: 800;
+		font-size: 15px;
+		color: var(--dark-orange);
     line-height: 20px;
-
-    
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 
 }
 
-    
+#comment1 {
+	border-bottom: 1px solid var(--dark-orange);
+	padding-bottom: 25px;
+}
+
+.comments .comment-label {
+	padding-left: 50px;
+	height: 25%;
+	font-size: 20px;
+	align-content: center;
+}
+
+.comments .comment-block {
+	height: 50%;
+}
+
+.comments .comment-input {
+	height: 25%;
+}
+
+.user-icon {
+	width: 10%;
+	float: left;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+
+.user-input {
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 10px;
+	height: 100%;
+	width: 90%;
+	float: right;
+}
+
+.comment-section {
+	height: 25%;
+}
+
+.user-text {
+	font-weight: 600;
+	float: left;
+	padding-left: 15px;
+	padding-top: 15px;
+	color: var(--dark-orange);
+}
+
+.comment-input-box {
+	background-color: var(--white-orange);
+	border: 1px solid var(--light-orange);
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 90%;
+	width: 95%;
+	border-radius: 25px;
+	text-transform: none;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+#hidden {
+	visibility: hidden;
+}
+
 
 /* RESPONSIVE DESIGN FOR SIDE BAR INCOMPLETE */
 @media screen and (max-width: 700px) {
