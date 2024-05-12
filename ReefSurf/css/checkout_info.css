@@ -65,7 +65,7 @@ main {
 
 .content .info-input-sections .info-sections .info-input .payment-button .paypal-payment-button {
 	width: 95%;
-  	background-color: var(--white-orange);
+  	background-color: gold;
 	color: white;
 	padding: 5px 25px;
 	text-align: center;
